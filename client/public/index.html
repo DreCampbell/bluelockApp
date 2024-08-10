@@ -1,43 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Blue Lock APP</title>
+    <link rel="icon" href="/images/Blue_Lock.jpeg" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <h1>Welcome to Blue Lock</h1>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- <form action="/todos/createTodo" method="POST">
+      <input type="text" placeholder="Enter Player Stats" name="todoItem" />
+      <input class="btn" type="submit" />
+    </form> -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <img class="blueLock" src="/images/Blue_Lock.jpeg" alt="" />
+    <section class="container hidden">
+      <section id="card">
+        <img id="playerPhoto" src="#" alt="Player Photo" />
+        <div class="playerInfo">
+          <h3 id="name"></h3>
+          <h3 id="alias"></h3>
+          <h3 id="age"></h3>
+          <h3 id="height"></h3>
+          <h3 id="weapon"></h3>
+        </div>
+      </section>
+    </section>
+
+    <section class="players">
+      <div id="row1">
+        <img id="isagi" class="click" src="/images/yoichi_isagi.jpeg" alt="" />
+      </div>
+
+      <div id="row1">
+        <img
+          id="bachira"
+          class="click"
+          src="/images/meguru_bachira.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row1">
+        <img
+          id="chigiri"
+          class="click"
+          src="/images/hyoma_chigiri.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row2">
+        <img
+          id="gagamaru"
+          class="click"
+          src="/images/gin_gagamaru.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row2">
+        <img id="raichi" class="click" src="/images/jingo_raichi.jpeg" alt="" />
+      </div>
+
+      <div id="row2">
+        <img
+          id="igarashi"
+          class="click"
+          src="/images/gurimu_igarashi.jpeg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section class="players2">
+      <div id="row3">
+        <img
+          id="imamura"
+          class="click"
+          src="/images/yudai_imamura.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row3">
+        <img
+          id="kunigami"
+          class="click"
+          src="/images/rensuke_kunigami.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row3">
+        <img id="iemon" class="click" src="/images/okuhito_iemon.jpeg" alt="" />
+      </div>
+
+      <div id="row4">
+        <img
+          id="naruhaya"
+          class="click"
+          src="/images/asahi_naruhaya.jpeg"
+          alt=""
+        />
+      </div>
+
+      <div id="row4">
+        <img id="kuon" class="click" src="/images/wataru_kuon.jpeg" alt="" />
+      </div>
+    </section>
+
+    <button>Refresh</button>
+    <script src="/js/main.js"></script>
   </body>
 </html>
