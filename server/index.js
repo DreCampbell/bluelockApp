@@ -121,7 +121,7 @@ const players = {
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.sendFile(__dirname + "/index.html");
+  res.sendFile(__dirname + "/index.js");
 });
 
 app.get("/api/:playerName", (req, res) => {
