@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const PORT = 5001;
+
+app.use(cors());
 
 const players = {
   isagi: {
